@@ -196,7 +196,7 @@ CHECK (status IN ('COMPLETO', 'ABERTO', 'CANCELADO', 'PAGO', 'ENVIADO', 'REEMBOL
 
 ALTER TABLE envios 
 ADD CONSTRAINT verificacao_envios
-CHECK (status IN ('TRANSITO', 'CRIADO', 'ENTREGUE', 'TRANSITO'));
+CHECK (status IN ('TRANSITO', 'CRIADO', 'ENTREGUE', 'ENVIADO'));
 
 ALTER TABLE lojas
 ADD CONSTRAINT verificacao_enderecos
